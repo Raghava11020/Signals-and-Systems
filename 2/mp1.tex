@@ -1,69 +1,47 @@
-\documentclass[12pt]{article}
+\documentclass[joournal,12pt,twocolumn]{IEEEtran}
 \usepackage{amsmath,amsfonts,amssymb,float}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
 \title{NCERT DISCRETE}
 \author{Raghava Ganji\\EE23BTECH11020}
 \date{}
 \parindent 0px
 \begin{document}
 \maketitle
+\newpage
+\bigskip
 \textbf{Question 10.5.3.5:}
 The first term of an AP is $5$, the last term is $45$ and the sum is $400$. Find the number of terms and the common difference.\\
 \textbf{solution:}\\
-Given AP is 5, \ldots, 45.\\
-Therefore  $x_1=5$ and $x_n=45$ and given $S_n$=400.\\\\
+Given AP is 5, \ldots, 45.\\\\
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|}\hline
-$x_1$ & $x_n$ & $S_n$\\ \hline
-$5$ & $45$ & $400$\\ \hline
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+$x_1$ & $x_n$ & $S_n$ & $n$ & $d$ & $x_0$\\ \hline
+$5$ & $45$ & $400$ & $?$ & $?$ & $x_1-d$\\ \hline
 \end{tabular}
-\caption{Given inputs}
+\caption{parameters}
 \end{table}
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}\hline
-n & d\\ \hline
-$?$ &$?$\\ \hline
-\end{tabular}
-\caption{Finding Variables}
-\end{table}
-we know the equation of $x_n$ is
-\begin{equation}
-\tag{1}
-x_n=x_1+(n-1)d
-\end{equation}
-by substituting the values of $x_1$ and $x_n$ in the equation 1, we get
-\begin{equation}
-\tag{2}
+\begin{align}
+x_n=x_0+nd
+\end{align}
+\begin{align}
 40=(n-1)d
-\end{equation}
-Also we know the equation of $S_n$ is
-\begin{equation}
-\tag{3}
-S_n=\frac{n}{2} [2x_1+(n-1)d]
-\end{equation}
-by substituting the values of $S_n$, $x_1$ and (n-1)d in the equation 3, we get
-\begin{equation}
-\tag{4}
+\end{align}
+\begin{align}
+S_n=\frac{n}{2} [2x_0+(n+1)d]
+\end{align}
+\begin{align}
 400=\frac{n}{2} [10+40]
-\end{equation}
-\begin{equation}
-\tag{5}
-800=50n
-\end{equation}
-Therefore,
-\begin{equation}
-\tag{6}
+\end{align}
+\begin{align}
 n=16
-\end{equation}
+\end{align}
 by substituting the value of n in the equation 2, we get
-\begin{equation}
-\tag{7}
+\begin{align}
 40=15d
-\end{equation}
-\begin{equation}
-\tag{8}
+\end{align}
+\begin{align}
 d=\frac{8}{3}
-\end{equation}
-Therefore the number of terms n=$16$ and the common difference d=$\frac{8}{3}$.
+\end{align}
 \end{document}
