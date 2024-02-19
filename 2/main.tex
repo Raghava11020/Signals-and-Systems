@@ -63,35 +63,32 @@ Given AP is 5, \ldots, 45.\\\\
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|}\hline
-$x(1)$ & $5$ & $ 1st\hspace{1mm}term$\\ \hline
-$x(n)$ & $45$ & $nth\hspace{1mm}term$\\ \hline
-$s(n)$ & $400$ & $sum\hspace{1mm}of\hspace{1mm}n\hspace{1mm}terms$\\ \hline
+$x(0)$ & $5$ & $ 1st\hspace{1mm}term$\\ \hline
+$x(n-1)$ & $45$ & $nth\hspace{1mm}term$\\ \hline
+$s(n-1)$ & $400$ & $sum\hspace{1mm}of\hspace{1mm}n\hspace{1mm}terms$\\ \hline
 $n$ & $?$ & $no.of\hspace{1mm}terms$\\ \hline
 $d$ & $?$ & $common\hspace{1mm}difference$\\ \hline
-$x(0)$ & $x(1)-d$ & $0th\hspace{1mm}term$\\ \hline
 \end{tabular}
 \caption{parameters}
 \end{table}
 \begin{align}
 x(n)&=x(0)+nd\\
 40&=(n-1)d\\
-s(n)&=\frac{n}{2} [2x(0)+(n+1)d]\\
+s(n)&=\frac{n+1}{2} [2x(0)+nd]\\
+s(n-1)&=\frac{n}{2} [2x(0)+(n-1)d]\\
 n&=16\\
 d&=\frac{8}{3}
 \end{align}
-by substituting the value of n in the equation 2, we get the equation 5.\\
+by substituting the value of n in the equation 2, we get the equation 6.\\
 z transform of $x(n),s(n)$ are $X(z),S(z)$
 \begin{align}
-X(z)=5\times \frac{z^{-1}}{(1-z^{-1})}\\
-S(z)=\frac{22}{3} \times \frac{z^{-1}}{(1-z^{-1})^2}
+X(z)=\frac{7}{3(1-z^{-1})}+\frac{8}{3(1-z^{-1})^2}\\
+S(z)=\frac{7}{3(1-z^{-1})^2}+\frac{8}{3(1-z^{-1})^3}
 \end{align}
-\renewcommand\thefigure{1}
-\begin{figure}[h]
+\begin{figure}
     \centering
-    \includegraphics[width=1.0\columnwidth]{123.png}
+    \includegraphics[width=1\linewidth]{1.png}
     \caption{1}
     \label{fig:enter-label}
 \end{figure}
 \end{document}
-
-
