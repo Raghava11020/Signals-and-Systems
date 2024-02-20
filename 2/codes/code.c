@@ -13,7 +13,7 @@ int main() {
 
     for (int i = 0; i < 33; i++) {
         int n = i;
-        float x_1 = (float)(15 + 8 * n)/3;
+        float x = (float)(15 + 8 * n)/3;
         fprintf(file, "%d %.2f\n", n, x);
     }
 
