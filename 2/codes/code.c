@@ -9,12 +9,12 @@ int main() {
     }
 
     // Use fprintf to write values to the file directly without arrays
-    fprintf(file, "Values for stem plot of x_1(n):\n");
+    fprintf(file, "Values for stem plot of x(n):\n");
 
     for (int i = 0; i < 33; i++) {
         int n = i;
         float x_1 = (float)(15 + 8 * n)/3;
-        fprintf(file, "%d %.2f\n", n, x_1);
+        fprintf(file, "%d %.2f\n", n, x);
     }
 
     fclose(file);  // Close the file
