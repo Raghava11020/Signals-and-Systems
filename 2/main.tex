@@ -63,27 +63,27 @@ Given AP is 5, \ldots, 45.\\\\
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|}\hline
-$x\brak 0$ & $5$ & $ 1st\hspace{1mm}term$\\ \hline
-$x\brak {n-1}$ & $45$ & $nth\hspace{1mm}term$\\ \hline
-$s\brak {n-1}$ & $400$ & $sum\hspace{1mm}of\hspace{1mm}n\hspace{1mm}terms$\\ \hline
-$n$ & $?$ & $no.of\hspace{1mm}terms$\\ \hline
-$d$ & $?$ & $common\hspace{1mm}difference$\\ \hline
+$x\brak 0$ & $5$ & 1st\hspace{1mm}term\\ \hline
+$x\brak {n-1}$ & $45$ & nth\hspace{1mm}term\\ \hline
+$y\brak {n-1}$ & $400$ & sum\hspace{1mm}of\hspace{1mm}n\hspace{1mm}terms\\ \hline
+n & ? & no.of\hspace{1mm}terms\\ \hline
+d & ? & common\hspace{1mm}difference\\ \hline
 \end{tabular}
 \caption{parameters}
 \end{table}
 \begin{align}
 x\brak n&=x\brak 0+nd\\
 40&=\brak {n-1}d\\
-s\brak n&=\frac{n+1}{2} \sbrak {2x\brak 0+nd}\\
-s\brak {n-1}&=\frac{n}{2} \sbrak {2x\brak 0+\brak {n-1}d}\\
+y\brak n&=\frac{n+1}{2} \sbrak {2x\brak 0+nd}\\
+y\brak {n-1}&=\frac{n}{2} \sbrak {2x\brak 0+\brak {n-1}d}\\
 \implies n&=16\\
 \implies d&=\frac{8}{3}
 \end{align}
 by substituting the value of n in the equation 2, we get the equation 6.\\
-z transform of $x\brak n,s\brak n$ are $X\brak z,S\brak z$
+z transform of $x\brak n,y\brak n$ are $X\brak z,Y\brak z$
 \begin{align}
 X\brak z&=\frac{7}{3(1-z^{-1})}+\frac{8}{3(1-z^{-1})^2}\\
-S\brak z&=\frac{7}{3(1-z^{-1})^2}+\frac{8}{3(1-z^{-1})^3}
+Y\brak z&=\frac{7}{3(1-z^{-1})^2}+\frac{8}{3(1-z^{-1})^3}
 \end{align}
 \begin{figure}
     \centering
