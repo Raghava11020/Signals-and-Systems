@@ -72,17 +72,17 @@ d & ? & common\hspace{1mm}difference\\ \hline
 \caption{parameters}
 \end{table}
 \begin{align}
-x\brak n&=x\brak 0+nd\\
-40&=nd\\
-y\brak n&=\frac{n+1}{2} \sbrak {2x\brak 0+nd}\\
-\implies n&=15\\
-\implies d&=\frac{8}{3}
+x\brak n&=x\brak 0+nd \nonumber\\
+40&=nd\label{one}\\
+y\brak n&=\frac{n+1}{2} \sbrak {2x\brak 0+nd} \nonumber\\
+\implies n&=15\label{two}\\
+\implies d&=\frac{8}{3}\label{three}
 \end{align}
-by substituting the value of n in the equation 2, we get the equation 5.\\
+by substituting equation \eqref{two} in the  equation \eqref{one}, we get the equation \eqref{three}.\\
 z transform of $x\brak n,y\brak n$ are $X\brak z,Y\brak z$
 \begin{align}
-X\brak z&=\frac{7}{3(1-z^{-1})}+\frac{8}{3(1-z^{-1})^2}\\
-Y\brak z&=\frac{7}{3(1-z^{-1})^2}+\frac{8}{3(1-z^{-1})^3}
+X\brak z&=\frac{7}{3(1-z^{-1})}+\frac{8}{3(1-z^{-1})^2} \nonumber\\
+Y\brak z&=\frac{7}{3(1-z^{-1})^2}+\frac{8}{3(1-z^{-1})^3} \nonumber
 \end{align}
 \begin{figure}
     \centering
