@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.1.7)  24 FEB 2024 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.1.7)  25 FEB 2024 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,10 +1224,13 @@ LaTeX Info: Redefining \nameref on input line 44.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 53.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
 3.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
@@ -1255,7 +1258,8 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 59--74
+(./tables/table10.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 59--64
 
  []
 
@@ -1267,7 +1271,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 ...phics[width=1\columnwidth]{10.5.3.5.1.png}
+l.79 ...phics[width=1\columnwidth]{10.5.3.5.1.png}
                                                   
 ? 
 File: 10.5.3.5.1.png Graphic file (type eps)
@@ -1280,7 +1284,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 ...phics[width=1\columnwidth]{10.5.3.5.2.jpg}
+l.84 ...phics[width=1\columnwidth]{10.5.3.5.2.jpg}
                                                   
 ? 
 File: 10.5.3.5.2.jpg Graphic file (type eps)
@@ -1292,10 +1296,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29186 strings out of 478288
- 577298 string characters out of 5849316
- 867949 words of memory out of 5000000
- 46771 multiletter control sequences out of 15000+600000
+ 29194 strings out of 478288
+ 577444 string characters out of 5849316
+ 867938 words of memory out of 5000000
+ 46775 multiletter control sequences out of 15000+600000
  533720 words of font info for 179 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,11n,96p,1701b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
