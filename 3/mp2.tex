@@ -56,18 +56,10 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \textbf{Question 11.9.4.3:}
-Find the sum to n terms to the series $3(1)^2+5(2)^2+7(3)^2+ \ldots$\\ 
+Find the sum to n terms to the series $3\brak 1^2+5\brak 2^2+7\brak 3^2+ \ldots$\\ 
 \solution\\
-Given series is $3(1)^2+5(2)^2+7(3)^2+ \ldots$\\\\
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|c|c|}\hline
-$x\brak 0$ & $3$ & 1st\hspace{1mm}term\\ \hline
-$x\brak n$ & $?$ & \brak {n+1}th\hspace{1mm}term\\ \hline
-$y\brak {n-1}$ & $?$ & sum\hspace{1mm}of\hspace{1mm}n\hspace{1mm}terms\\ \hline
-\end{tabular}
-\caption{parameters}
-\end{table}
+Given series is $3\brak 1^2+5\brak 2^2+7\brak 3^2+ \ldots$\\\\
+\input{tables/table11.tex}
 \begin{align}
 x\brak n&=\brak{2n+3}\brak{n+1}^2\\
 y\brak n&=x\brak n*u\brak n\\
@@ -76,10 +68,14 @@ X\brak z&=\frac{3+8z^{-1}+z^{-2}}{\brak{1-z^{-1}}^4}\\
 U\brak z&=\frac{1}{1-z^{-1}}\\
 \implies Y\brak z&=\frac{3+8z^{-1}+z^{-2}}{\brak{1-z^{-1}}^5}\\
 y\brak n&=\frac{1}{2\pi j}\oint_C\frac{\brak{3+8z^{-1}+z^{-2}}z^{n-1}}{\brak{1-z^{-1}}^5}dz\\
+\end{align}
+Using \eqref{eq:ResThm}.
+\begin{align}
 y\brak n&=\lim_{z\to 1}\frac{1}{4!}\frac{d^4}{dz^4}\frac{3z^{n-1}+8z^{n-2}+z^{n-3}}{\brak{1-z^{-1}}^5}\brak {1-z^{-1}}^5\\
-\implies y\brak n&=\frac{\brak{n+1}\brak{n+2}\brak{3n^2+11n+9}}{6}\eqref{app/cont_int.tex/eq:ResThm}\\
+\implies y\brak n&=\frac{\brak{n+1}\brak{n+2}\brak{3n^2+11n+9}}{6}\\
 \implies y\brak {n-1}&=\frac{n\brak{n+1}\brak{3n^2+5n+1}}{6}
 \end{align}
+
 \begin{figure}
     \centering
     \includegraphics[width=1\columnwidth]{11.9.4.3.1.jpg}
