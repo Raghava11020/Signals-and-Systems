@@ -57,15 +57,12 @@
 \renewcommand{\thetable}{\theenumi}
 
 \textbf{GATE 2023 BM.48:}
-The function $f(z)=\frac{1}{z-1}$ of a complex variable Z on a closed counter in an anti-clockwise direction.For which of the following counters, does this integral have a non-zero value?\\
+The function $f(z)=\frac{1}{z-1}$ of a complex variable z on a closed contour in an anti-clockwise direction.For which of the following contours, does this integral have a non-zero value?\\
 \brak{A}$\abs{z-2}=0.01$\\
 \brak{B}$\abs{z-1}=0.1$\\
 \brak{C}$\abs{z-3}=5$\\
 \brak{D}$\abs{z}=2$\\
 \solution\\
-For the integral to have a non-zero value, the contour must enclose the singularity of the function.\\\\
-For $\oint_{c}f\brak zdz$ the singularity exists at $z=1$.\\\\
-Above given all the contours are circles. Therefore which contour encloses $z=1$, then the given integral have a non-zero value.\\\\
 \begin{figure}
     \centering
     \includegraphics[width=1\columnwidth]{plotg231.png}
@@ -86,5 +83,22 @@ Above given all the contours are circles. Therefore which contour encloses $z=1$
     \includegraphics[width=1\columnwidth]{plotg234.png}
     \caption{graph of option D}
 \end{figure}
-After analysing all the graphs that we understand for options B,C,D contours encloses $z=1$. 
+Using \eqref{eq:CIT}
+\begin{align}
+\oint_{c}\frac{1}{z-1}dz &=2\pi iRes\sbrak{\frac{1}{z-1},1}
+\end{align}
+For option A the pole is outside the contour, then Res=0.\\
+\begin{align}
+\implies \oint_{c}\frac{1}{z-1}dz&=2\pi i\brak 0\\
+\notag &=0
+\end{align}
+For all other options the pole is inside the contours.\\
+Then, using \eqref{eq:Res Thm}
+\begin{align}
+Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
+\notag &=1\\
+\implies \oint_{c}\frac{1}{z-1}dz&=2\pi i\brak 1\\
+\notag &=2\pi i
+\end{align}
+We can conclude that for options B,C,D contours have the non-zero value for this integral.
 \end{document}
