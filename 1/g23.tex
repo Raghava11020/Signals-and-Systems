@@ -63,6 +63,12 @@ The function $f(z)=\frac{1}{z-1}$ of a complex variable z on a closed contour in
 \brak{C}$\abs{z-3}=5$\\
 \brak{D}$\abs{z}=2$\\
 \solution\\
+Cauchy's Integral Formula and Residue Theorem.
+\begin{align}
+\oint_{c}f\brak z&=2\pi jRes\sbrak{f\brak z,z_0}\label{eq:CIF}\\
+Res\sbrak{f\brak z,z_0}&=\lim_{z\to z_0}\sbrak{\brak{z-z_0}f\brak z}\label{eq:Res Thm}
+\end{align}
+Here $z_0$ is pole of the f\brak z\\
 \begin{figure}[h!]
     \centering
     \includegraphics[width=1\columnwidth]{g23.png}
@@ -75,7 +81,7 @@ Using \eqref{eq:CIF}
 For option A the pole is outside the contour, then Residue is zero.\\
 \begin{align}
 \oint_{c}\frac{1}{z-1}dz &=2\pi j\brak{0}\\
-&=0
+\notag&=0
 \end{align}
 For option B the pole is inside the contour.\\
 Then, using \eqref{eq:Res Thm}
