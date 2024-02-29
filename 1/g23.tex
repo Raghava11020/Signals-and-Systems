@@ -63,15 +63,15 @@ The function $f(z)=\frac{1}{z-1}$ of a complex variable z on a closed contour in
 \brak{C}$\abs{z-3}=5$\\
 \brak{D}$\abs{z}=2$\\
 \solution\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\columnwidth]{g23.png}
+    \caption{graphs of all the given contours}
+\end{figure}
 Using \eqref{eq:CIF}
 \begin{align}
 \oint_{c}\frac{1}{z-1}dz &=2\pi jRes\sbrak{\frac{1}{z-1},1}
 \end{align}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1\columnwidth]{plotg231.png}
-    \caption{graph of option A}
-\end{figure}
 For option A the pole is outside the contour, then\\
 \begin{align}
 \notag z&=2+0.01e^{jt}\\
@@ -81,11 +81,6 @@ For option A the pole is outside the contour, then\\
 &=\int_{1}^{1}\frac{1}{100+\alpha}d\alpha=0
 \end{align}
 For option B the pole is inside the contour.\\
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1\columnwidth]{plotg232.png}
-    \caption{graph of option B}
-\end{figure}
 Then, using \eqref{eq:Res Thm}
 \begin{align}
 Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
@@ -94,11 +89,6 @@ Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
 \notag &=2\pi j\neq 0
 \end{align}
 For option C the pole is inside the contour.\\
-\begin{figure}
-    \centering
-    \includegraphics[width=1\columnwidth]{plotg233.png}
-    \caption{graph of option C}
-\end{figure}
 Then, using \eqref{eq:Res Thm}
 \begin{align}
 Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
@@ -106,11 +96,6 @@ Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
 \implies \oint_{c}\frac{1}{z-1}dz&=2\pi j\brak 1\\
 \notag &=2\pi j\neq 0
 \end{align}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1\columnwidth]{plotg234.png}
-    \caption{graph of option D}
-\end{figure}
 For option D the pole is inside the contour.\\
 Then, using \eqref{eq:Res Thm}
 \begin{align}
