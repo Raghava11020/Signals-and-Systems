@@ -69,43 +69,60 @@ Cauchy's Integral Formula and Residue Theorem.
 Res\sbrak{f\brak z,z_0}&=\lim_{z\to z_0}\sbrak{\brak{z-z_0}f\brak z}\label{eq:Res Thm}
 \end{align}
 Here $z_0$ is pole of the f\brak z\\
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=1\columnwidth]{g23.png}
-    \caption{graphs of all the given contours}
-\end{figure}
 Using \eqref{eq:CIF}
 \begin{align}
 \oint_{c}\frac{1}{z-1}dz &=2\pi jRes\sbrak{\frac{1}{z-1},1}
 \end{align}
-For option A the pole is outside the contour, then Residue is zero.\\
+\begin{enumerate}
+\item For option A the pole is outside the contour, then Residue is zero.\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\columnwidth]{plotg231.png}
+    \caption{graph of option A}
+\end{figure}
 \begin{align}
 \implies\oint_{c}\frac{1}{z-1}dz &=2\pi j\brak{0}\\
 \implies 0
 \end{align}
-For option B the pole is inside the contour.\\
+\item For option B the pole is inside the contour.\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\columnwidth]{plotg232.png}
+    \caption{graph of option B}
+\end{figure}
 Then, using \eqref{eq:Res Thm}
 \begin{align}
 Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
 &=1\\
 \implies \oint_{c}\frac{1}{z-1}dz&=2\pi j\brak 1\\
-\implies 2\pi j&\neq 0
+\implies 2\pi j
 \end{align}
-For option C the pole is inside the contour.\\
+\item For option C the pole is inside the contour.\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\columnwidth]{plotg233.png}
+    \caption{graph of option C}
+\end{figure}
 Then, using \eqref{eq:Res Thm}
 \begin{align}
 Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
 &=1\\
 \implies \oint_{c}\frac{1}{z-1}dz&=2\pi j\brak 1\\
-\implies 2\pi j&\neq 0
+\implies 2\pi j
 \end{align}
-For option D the pole is inside the contour.\\
+\item For option D the pole is inside the contour.\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\columnwidth]{plotg234.png}
+    \caption{graph of option D}
+\end{figure}
 Then, using \eqref{eq:Res Thm}
 \begin{align}
 Res\sbrak{\frac{1}{z-1},1} &=\lim_{z\to 1}\brak{z-1}\frac{1}{z-1}\\
 &=1\\
 \implies \oint_{c}\frac{1}{z-1}dz&=2\pi j\brak 1\\
-\implies 2\pi j&\neq 0
+\implies 2\pi j
 \end{align}
+\end{enumerate}
 We can conclude that for options B,C,D contours have the non-zero value for this integral.
 \end{document}
