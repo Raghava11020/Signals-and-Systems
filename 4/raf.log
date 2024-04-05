@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  4 APR 2024 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.5)  5 APR 2024 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1305,67 +1305,82 @@ LaTeX Info: Redefining \nameref on input line 62.
 \@outlinefile=\write5
 \openout5 = `raf.out'.
 
- (./raf.toc)
-\tf@toc=\write6
-\openout6 = `raf.toc'.
-
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 8
-8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
-File: ts1txr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-04.
+ (./raf.toc
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 7
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-04.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 7
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-04.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 7
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-04.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 7
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 7
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+))
+\tf@toc=\write6
+\openout6 = `raf.toc'.
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 106--109
+\OT1/txr/m/n/12 10KHz. And above 10KHz only noise is
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
-<figs/spectrogam_with_noise.png, id=25, 834.11626pt x 548.0475pt>
+<figs/spectrogam_with_noise.png, id=45, 834.11626pt x 548.0475pt>
 File: figs/spectrogam_with_noise.png Graphic file (type png)
 <use figs/spectrogam_with_noise.png>
-Package pdftex.def Info: figs/spectrogam_with_noise.png  used on input line 112
+Package pdftex.def Info: figs/spectrogam_with_noise.png  used on input line 113
 .
 (pdftex.def)             Requested size: 214.20154pt x 140.73285pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+LaTeX Warning: Reference `prob:output' on page 1 undefined on input line 143.
+
+<figs/Spectrogramwithreduced-noise.png, id=48, 824.07875pt x 551.05875pt>
+File: figs/Spectrogramwithreduced-noise.png Graphic file (type png)
+<use figs/Spectrogramwithreduced-noise.png>
+Package pdftex.def Info: figs/Spectrogramwithreduced-noise.png  used on input l
+ine 148.
+(pdftex.def)             Requested size: 214.20154pt x 143.23825pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 []\OT1/txr/m/n/12 The out-put of the python script
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
-\OT1/txr/m/n/12 in Prob-lem []2.3[] is the au-dio file
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
+\OT1/txr/m/n/12 in Prob-lem [] is the au-dio file
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 \OT1/txr/m/n/12 Sound[]With[]ReducedNoise.wav. Play
  []
 
 
-Underfull \hbox (badness 6927) in paragraph at lines 144--147
+Underfull \hbox (badness 6927) in paragraph at lines 143--152
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The key strokes as well as
  []
 
@@ -1373,24 +1388,171 @@ Underfull \hbox (badness 6927) in paragraph at lines 144--147
 
 
  <./figs/spectrogam_with_noise.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+<figs/Plot_xn_yn.png, id=94, 462.528pt x 346.896pt>
+File: figs/Plot_xn_yn.png Graphic file (type png)
+<use figs/Plot_xn_yn.png>
+Package pdftex.def Info: figs/Plot_xn_yn.png  used on input line 179.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+ [2 <./figs/Spectrogramwithreduced-noise.png> <./figs/Plot_xn_yn.png>]
+<figs/H(z)_4.5.png, id=134, 462.528pt x 346.896pt>
+File: figs/H(z)_4.5.png Graphic file (type png)
+<use figs/H(z)_4.5.png>
+Package pdftex.def Info: figs/H(z)_4.5.png  used on input line 308.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+ [3 <./figs/H(z)_4.5.png>]
+<figs/hn.png, id=171, 462.528pt x 346.896pt>
+File: figs/hn.png Graphic file (type png)
+<use figs/hn.png>
+Package pdftex.def Info: figs/hn.png  used on input line 343.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--377
 
  []
 
-[2
+<figs/hndef.png, id=177, 462.528pt x 346.896pt>
+File: figs/hndef.png Graphic file (type png)
+<use figs/hndef.png>
+Package pdftex.def Info: figs/hndef.png  used on input line 386.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+[4 <./figs/hn.png>]
+<figs/y_by_conv.png, id=204, 462.528pt x 346.896pt>
+File: figs/y_by_conv.png Graphic file (type png)
+<use figs/y_by_conv.png>
+Package pdftex.def Info: figs/y_by_conv.png  used on input line 411.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
 
-] (./raf.aux)
+
+LaTeX Warning: Command \j invalid in math mode on input line 445.
+
+<figs/yn_by_dft(1).png, id=206, 462.528pt x 346.896pt>
+File: figs/yn_by_dft(1).png Graphic file (type png)
+<use figs/yn_by_dft(1).png>
+Package pdftex.def Info: figs/yn_by_dft(1).png  used on input line 455.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+[5 <./figs/hndef.png> <./figs/y_by_conv.png> <./figs/yn_by_dft(1).png>]
+<figs/yn_verf_5.4.png, id=232, 462.528pt x 346.896pt>
+File: figs/yn_verf_5.4.png Graphic file (type png)
+<use figs/yn_verf_5.4.png>
+Package pdftex.def Info: figs/yn_verf_5.4.png  used on input line 465.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+<figs/yn_DFT_matrix.png, id=234, 462.528pt x 346.896pt>
+File: figs/yn_DFT_matrix.png Graphic file (type png)
+<use figs/yn_DFT_matrix.png>
+Package pdftex.def Info: figs/yn_DFT_matrix.png  used on input line 508.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@underline' on input line 514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 514.
+
+
+LaTeX Warning: Reference `prob:audio_filter_problem' on page 6 undefined on inp
+ut line 515.
+
+
+LaTeX Warning: Reference `prob:audio_filter_problem' on page 6 undefined on inp
+ut line 524.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--532
+
+ []
+
+[6 <./figs/yn_verf_5.4.png> <./figs/yn_DFT_matrix.png>]
+<figs/filter audio comparision.png, id=261, 722.7pt x 433.62pt>
+File: figs/filter audio comparision.png Graphic file (type png)
+<use figs/filter audio comparision.png>
+Package pdftex.def Info: figs/filter audio comparision.png  used on input line 
+540.
+(pdftex.def)             Requested size: 214.20154pt x 128.51889pt.
+
+
+LaTeX Warning: Reference `prob:audio_filter_problem' on page 7 undefined on inp
+ut line 545.
+
+
+Overfull \hbox (27.65247pt too wide) detected at line 554
+[]
+ []
+
+
+Overfull \hbox (7.96732pt too wide) detected at line 562
+[]
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 583--585
+\OT1/txr/m/n/12 The be-low code com-putes the val-ues of
+ []
+
+(./tables/table.tex
+Overfull \hbox (11.15599pt too wide) in paragraph at lines 5--14
+ [][] 
+ []
+
+)
+<figs/h(n)_7.2.png, id=268, 462.528pt x 346.896pt>
+File: figs/h(n)_7.2.png Graphic file (type png)
+<use figs/h(n)_7.2.png>
+Package pdftex.def Info: figs/h(n)_7.2.png  used on input line 593.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+ [7 <./figs/filter audio comparision.png> <./figs/h(n)_7.2.png>]
+<figs/Filter_Response.png, id=295, 462.528pt x 346.896pt>
+File: figs/Filter_Response.png Graphic file (type png)
+<use figs/Filter_Response.png>
+Package pdftex.def Info: figs/Filter_Response.png  used on input line 610.
+(pdftex.def)             Requested size: 214.20154pt x 160.6539pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--622
+\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The given but-ter-worth fil-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--622
+\OT1/txr/m/n/12 is low-pass with or-der=4 and cutoff-
+ []
+
+[8
+
+ <./figs/Filter_Response.png>] (./raf.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `raf.out' has not changed.
-(rerunfilecheck)             Checksum: 17C07EFD792D8C24B0A706F1CC235BDB;408.
+(rerunfilecheck)             Checksum: 13128033725C862C8F5182BEE2F27518;824.
  ) 
 Here is how much of TeX's memory you used:
- 43609 strings out of 478287
- 1003433 string characters out of 5849290
- 1836949 words of memory out of 5000000
- 61061 multiletter control sequences out of 15000+600000
- 529190 words of font info for 146 fonts, out of 8000000 for 9000
+ 43902 strings out of 478287
+ 1008039 string characters out of 5849290
+ 1837947 words of memory out of 5000000
+ 61199 multiletter control sequences out of 15000+600000
+ 542619 words of font info for 178 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 115i,7n,118p,423b,1433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,18n,118p,423b,1940s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/typ
@@ -1401,10 +1563,10 @@ are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on raf.pdf (2 pages, 92985 bytes).
+Output written on raf.pdf (8 pages, 358423 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
