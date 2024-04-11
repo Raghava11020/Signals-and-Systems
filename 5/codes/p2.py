@@ -34,4 +34,4 @@ plt.legend(loc='upper left')
 
 # Display the plot
 plt.grid(True)
-plt.savefig("fig2.png")
+plt.savefig("p2.png")
