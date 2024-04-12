@@ -6,7 +6,7 @@ def h_BP(n):
     if n == 0:
         return 0.025 / np.pi
     elif -48 <= n <= 48:
-        return (2 * np.cos(0.265 * n * np.pi) * np.sin(0.025 * n * np.pi)) / (n * np.pi)
+        return (2 * np.cos(0.39 * n * np.pi) * np.sin(0.05 * n * np.pi)) / (n * np.pi)
     else:
         return 0
 

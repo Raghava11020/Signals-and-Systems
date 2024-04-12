@@ -6,7 +6,7 @@ def h_LP(n):
     if n == 0:
         return 0.025 / np.pi
     elif -48 <= n <= 48:
-        return (np.sin(0.025 * n * np.pi)) / (n * np.pi)
+        return (np.sin(0.014 * n * np.pi)) / (n * np.pi)
     else:
         return 0
 
