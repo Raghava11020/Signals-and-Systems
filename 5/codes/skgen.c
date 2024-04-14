@@ -3,22 +3,26 @@
 #include <complex.h>
 
 #define N 4
-#define EPSILON 0.2
+#define EPSILON 0.505
 #define OMEGA_LP 1
-#define PI 3.14159265358979323846
-
+#define Pi 3.14159265358979323846
 int main() {
     // Calculate B_k coefficient
     double B_k = asinh(1 / EPSILON) / N;
 
     // Initialize an array to store the poles
     double complex poles[2*N];
-for (int k = 0 ; k<2*N;++k){
-	poles[k] = CMPLX(-OMEGA_LP *sin((2*k+1)*PI/(2*N))*sinh(B_k) ,- OMEGA_LP * cos((2*k+1)*PI/(2*N)) * cosh(B_k));
-        }    
+
+    // Compute and display poles
+    printf("Poles:\n");
+    for (int k = 1; k <= 2*N; ++k) {
+        double A_k = (2*k + 1) * Pi / (2 * N);
+        poles[k-1] = -OMEGA_LP*sin(A_k)*sinh(B_k) - I*OMEGA_LP*cos(A_k)*cosh(B_k);
+        printf("Pole %d: %.4f + j%.4f\n", k, creal(poles[k-1]), cimag(poles[k-1]));
+    }
 
     // Save poles to a .dat file
-    FILE *file = fopen("poles.txt", "w");
+    FILE *file = fopen("E:/Project/Signal and System/Filter_Design/codes/poles.txt", "w");
     if (file == NULL) {
         printf("Error opening file.\n");
         return 1;

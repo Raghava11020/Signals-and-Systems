@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy import signal
 
 # Define the cutoff frequency
-wc = 0.0553 * np.pi
+wc = 0.04325 * np.pi
 
 # Create a frequency vector
 w = np.linspace(-np.pi, np.pi, 1000)
@@ -50,4 +50,4 @@ plt.grid()
 
 
 plt.tight_layout()
-plt.savefig('p6.png')
+plt.show()

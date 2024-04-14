@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read pole data from the txt file
-data = np.loadtxt('poles.txt', delimiter=',', skiprows=1)
+data = np.loadtxt(r"E:\Project\Signal and System\Filter_Design\codes\poles.txt", delimiter=',', skiprows=1)
 
 # Separate real and imaginary parts
 real_parts = data[:, 0]
