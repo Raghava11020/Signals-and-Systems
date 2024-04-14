@@ -137,7 +137,7 @@ N \geq \left\lceil \frac{\cosh^{-1}\sqrt{D_2/D_1}}{\cosh^{-1}\Omega_{Ls}} \right
 \end{eqnarray}
 where $D_1 = \frac{1}{(1 - \delta)^2}-1$ and $D_2 = \frac{1}{\delta^2} - 1$ and $\left \lceil . \right \rceil$ is known as the ceiling operator . 
 \input{tables/table.tex}
-we get $N\geq 4$ and $0.169 \leq \epsilon \leq 0.61$\\
+we get $N\geq 4$ and $0.505 \leq \epsilon \leq 0.61$\\
 The below code plots \eqref{eq:mag_freq_response} for different values of $\epsilon$ .
 \begin{lstlisting}
 https://github.com/Raghava11020/Signals-and-Systems/blob/main/5/codes/p1.py
@@ -145,7 +145,7 @@ https://github.com/Raghava11020/Signals-and-Systems/blob/main/5/codes/p1.py
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\linewidth]{fig/p1.png}
-    \caption{The Analog Low-Pass Frequency Response for $0.169  \leq \epsilon \leq 0.61$}
+    \caption{The Analog Low-Pass Frequency Response for $0.505 \leq \epsilon \leq 0.61$}
     \label{fig:H_for_diff_eb}
 \end{figure}
 In \figref{fig:H_for_diff_eb} we can observe the equiripple behaviour in passband and monotonic behaviour in stopband. As the value of $\epsilon$ increases the value of $\vert H_{a,LP}(j\Omega_L)\vert$ decreases.\\
@@ -200,10 +200,10 @@ We know that from (17):-
 \begin{align}
     \abs{ H_{a,LP}(s_L)} &= \frac{1}{\sqrt{1+\epsilon^2}} \text{at} \hspace{5pt} \Omega_{L}=1 \implies s_{L} = j \label{eq:Gain_eq_LP} 
 \end{align}
-Substituting respective values in \eqref{eq:Gain_eq_LP} we get $G_{LP}=0.6251$
+Substituting respective values in \eqref{eq:Gain_eq_LP} we get $G_{LP}=0.2474$
 \begin{align}
-     H_{a,LP}(s_L) &= \frac{0.6251}{\brak{s_L-s_1}\brak{s_L-s_2}\brak{s_L-s_3}\brak{s_L-s_4}}\\
-     &= \frac{0.6251}{s_{L}^4 + 1.5964s_L^3 + 2.2741s_L^2 + 1.6276s_L + 0.6373}\label{eq:design}
+     H_{a,LP}(s_L) &= \frac{0.2474}{\brak{s_L-s_1}\brak{s_L-s_2}\brak{s_L-s_3}\brak{s_L-s_4}}\\
+    &= \frac{0.2474}{s_{L}^4 + 0.9574s_{L}^3 +1.45846s_{L}^2 + 0.7475303s_{L} +0.27732667}\label{eq:design}
 \end{align}
 \begin{lstlisting}
 https://github.com/Raghava11020/Signals-and-Systems/blob/main/5/codes/p3.py
@@ -231,11 +231,11 @@ As there is one to one correspondence between the filters so $\Omega=\Omega_{p1}
 \end{align}
 Substituting \eqref{eq:res1} in \eqref{eq:res2} we obtain Gain of required bass pass filter:
 \begin{align}
-    G_{BP} &= 896.08
+    G_{BP} &= 1.1425
 \end{align}
 Thus the response in s domain 
 \begin{align}
-    H_{a,BP}\brak{s} &= \frac{896.08s^4}{17945.06s^8 + 2475.14s^7 + 7372.87s^6 + 750.02s^5 + 1104.65s^4 + 73.85s^3 + 71.49s^2 + 2.36s + 1.68} \label{eq:magnitude_bandpass_sdom}
+     H_{a,BP}\brak{s} &= \frac{6.39\times 10^{-5}s^4}{s^8 + 0.0828s^7 + 0.4052s^6 + 0.025s^5 + 0.0605s^4 + 0.0024s^3 + 0.0039s^2 + 0.000079s + 0.000094} \label{eq:magnitude_bandpass_sdom}
 \end{align}
 The expressions in the s-domain and gain factors are computed by writing a Python code. \\
 In Figure 3, we plot $\vert H_{a,BP}(j\Omega)\vert$ as a function of $\Omega$ for both positve as
@@ -259,8 +259,9 @@ From the bilinear transformation, we obtain the digital bandpass filter from the
 \end{align}
 Substituting $s=\frac{1-z^{-1}}{1+z^{-1}}$ in \eqref{eq:magnitude_bandpass_sdom} and calculating expression using a python code we get :
 \begin{align}
-    H_{d,BP}(z) &= \frac{896.08z^8 -3584.32z^6 + 5376.48z^4 - 3584.32z^2 + 896.08}{13597.12z^8 - 59341.58z^7 + 107304.82z^6 - 98985.66z^5 + 54456.1z^4 - 37861.86z^3 + 41230.3z^2 - 26963.54z + 694.38)}
+     H_{d,BP}(z) &= \frac{G\brak{1 + 28z^{-2} + 70z^{-4} + 28z^{-6} + z^{-8}}}{1.5799 -10.145z^{-1} + 30.50z^{-2} - 55.412z^{-3} + 66.278z^{-4} - 53.367z^{-5} + 28.291z^{-6} - 9.0629z^{-7} + 1.3594z^{-8}}
 \end{align}
+where $G=6.39\times 10^{-5}$    
  \begin{lstlisting}
 https://github.com/Raghava11020/Signals-and-Systems/blob/main/5/codes/p5.py
 \end{lstlisting}
@@ -280,7 +281,7 @@ The lowpass filter has a passband frequency $\omega_l$ and transition band $\Del
 The stopband tolerance is $\delta=0.15$.The cutoff-frequency is given by :
 \begin{align}
     \omega_{l} &= \frac{B}{2}\\
-                &= 0.014\pi
+                &= 0.025\pi
 \end{align}
 \begin{lstlisting}
 https://github.com/Raghava11020/Signals-and-Systems/blob/main/5/codes/p6.py
